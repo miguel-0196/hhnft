@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "build": "set NODE_OPTIONS=--no-experimental-fetch && react-scripts --openssl-legacy-provider build",
     "eject": "react-scripts --openssl-legacy-provider eject",
     "lint": "eslint --ext .js,.jsx ./src",
     "lint:fix": "eslint --fix --ext .js,.jsx ./src"
@@ -24,9 +24,9 @@
   },
   "browserslist": {
     "production": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
     "development": [
       "last 1 chrome version",
